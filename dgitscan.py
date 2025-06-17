@@ -29,9 +29,11 @@ TARGET_DOMAIN = args.domain.strip().lower()
 IS_SILENT = args.silent
 
 # ========== CONFIGURATION ==========
-GITHUB_TOKEN = "ghp_xxxxxxxxxxx"  # Replace with your GitHub token
-# load_dotenv()
-# GITHUB_TOKEN = [v for k, v in os.environ.items() if k.startswith("GITHUB_TOKEN")]
+load_dotenv()  # Load environment variables from .env file
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")  # add your GitHub token to .env file or set it as an environment variable
+if not GITHUB_TOKEN:
+    console.print("[!] GITHUB_TOKEN not found. Please set it in your environment or .env file.", style="bold red")
+    exit(1) 
 HEADERS = {"Authorization": f"token {GITHUB_TOKEN}"}
 KEYWORD = TARGET_DOMAIN
 MAX_RESULTS = 50
