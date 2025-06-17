@@ -59,3 +59,15 @@ signatures:
   JSON Web Key:
     pattern: '"kty":\s*"RSA"'
     weight: 35
+  Bearer Token:
+    pattern: "(?i)bearer\\s+[A-Za-z0-9\\-._~+/=]{10,}"
+    weight: 25
+  Firebase URL:
+    pattern: "https:\\/\\/[a-z0-9\\-]+\\.firebaseio\\.com"
+    weight: 20
+  AWS Cognito Pool ID:
+    pattern: "[a-z]{2}-[a-z]+-\\d{1}_[a-zA-Z0-9]+"
+    weight: 25
+  GitLab Token:
+    pattern: "glpat-[0-9a-zA-Z\\-_]{20,}"
+    weight: 30

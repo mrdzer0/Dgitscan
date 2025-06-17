@@ -1,5 +1,7 @@
 # Dgitscan Output Folders
 /output/
+/playground/
+jsscan.py
 
 # Temporary & System Files
 *.log
