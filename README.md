@@ -1,6 +1,14 @@
 # Dgitscan - Deep Gitscan
 
-**Dgitscan** is a powerful GitHub reconnaissance tool that scans raw GitHub content for exposed subdomains and sensitive credentials related to a target organization. Built for bug bounty hunters, red teamers, and cybersecurity researchers, it combines subdomain enumeration, secret detection, entropy filtering, and DNS resolution in one streamlined CLI utility.
+<p align="center">
+  <img src="banner.png" alt="Drecon Banner" width="100%">
+</p>
+
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Status](https://img.shields.io/badge/status-active-success)
+![Built With Bash](https://img.shields.io/badge/built%20with-bash-green.svg)
+
+> **Dgitscan** is a powerful GitHub reconnaissance tool that scans raw GitHub content for exposed subdomains and sensitive credentials related to a target organization. Built for bug bounty hunters, red teamers, and cybersecurity researchers, it combines subdomain enumeration, secret detection, entropy filtering, and DNS resolution in one streamlined CLI utility.
 
 ---
 
